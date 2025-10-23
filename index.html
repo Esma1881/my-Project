@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HESAP MAKINESI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(101, 51, 84);
+            padding:;
+            height: 100vh;
+        }
+        .calculator-container{
+            width: 500px;           /* Sabit genişlik */
+            padding: 20px;          /* İç boşluk */
+            background-color: #737b96; /* gri arka plan */
+            border-radius: 15px;    /* köşeleri yuvarla */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* hafif gölge */
+
+        }
+        .col{
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: center;  
+            align-items: center;
+            display: flex;                
+            justify-content: center;      
+            align-items: center;
+            font-weight: bold;
+            height: 70px;               /* kutu yüksekliği */
+            background-color: #cfd8dc;  /* kutunun arka plan rengi */
+            border-radius: 10px;        /* köşeleri yuvarla */
+            margin: 5px;      /* yazıyı kalınlaştırır */
+            font-size: 24px;
+
+
+        }
+        .form-control{
+            padding: 15px;
+        }
+        .col:hover {
+            background-color: #90a4ae;
+            transform: scale(1.05);
+            color: white;
+            transition: 0.25s;
+        }
+        #islemler {
+            height: 80px;
+            background-color: #e0f2f1;
+            border: none;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+        }       
+    
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="calculator-container">
+        <div class="row 3"></div>
+        <input type="text" id="islemler" class="form-control form-control-lg mb-3 text-end" placeholder="0" disabled>
+
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <div class="col operator">%</div>
+            <div class="col control">CE</div>
+            <div class="col control">C</div>
+            <div class="col control">⌫</div>
+        </div>
+        <div class="row">
+            <div class="col operator">x⁻¹</div>
+            <div class="col operator">x²</div>
+            <div class="col operator">√</div>
+            <div class="col operator">/</div>
+        </div>
+        <div class="row">
+            <div class="col number">7</div>
+            <div class="col number">8</div>
+            <div class="col number">9</div>
+            <div class="col operator">*</div>
+        </div>
+        <div class="row">
+            <div class="col number">4</div>
+            <div class="col number">5</div>
+            <div class="col number">6</div>
+            <div class="col operator">-</div>
+        </div>
+        <div class="row">
+            <div class="col number">1</div>
+            <div class="col number">2</div>
+            <div class="col number">3</div>
+            <div class="col operator">+</div>
+        </div>
+        <div class="row">
+            <div class="col operator">+/-</div>
+            <div class="col number">0</div>
+            <div class="col operator">.</div>
+            <div class="col control">=</div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+</html>
